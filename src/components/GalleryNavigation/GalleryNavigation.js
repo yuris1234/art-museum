@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 function GalleryNavigation(props) {
     const galleryRecord = props.records.map((record) => {
-        return record.name;
+        return <GalleryRecord record={record}/>
     });
 
     return (
