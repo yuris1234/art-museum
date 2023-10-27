@@ -1,7 +1,11 @@
+import {NavLink} from "react-router-dom";
+
 const GalleryRecord = (props) => {
     return (
-        <Navlink to={`/galleries/${props.record.galleryid}`}>
+        <NavLink to={`/galleries/${props.record.galleryid}`} activeStyle={{color: "aquamarine"}}>
             <li> {props.record.name} </li>
-        </Navlink>
+        </NavLink>
     )
 }
+
+export default GalleryRecord;
