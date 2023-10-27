@@ -20798,5 +20798,5 @@ const harvardArt = {
      }
     ]
    }
-   
+
    export default harvardArt;

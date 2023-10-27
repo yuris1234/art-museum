@@ -1,6 +1,16 @@
-function GalleryNavigation() {
+import {NavLink} from "react-router-dom";
+
+
+function GalleryNavigation(props) {
+    const galleryRecord = props.records.map((record) => {
+        return record.name;
+    });
+
     return (
-        <h1> Galleries </h1>
+        <nav>
+            <NavLink to="/">Home</NavLink>
+            <h1> Galleries </h1>
+        </nav>
     );
 };
 
